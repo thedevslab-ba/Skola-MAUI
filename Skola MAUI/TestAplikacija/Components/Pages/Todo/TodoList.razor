@@ -1,0 +1,84 @@
+﻿@page "/todolist"
+
+@using TestAplikacija.Services.TodoServices
+@using TestAplikacija.Models
+@inject ITodoServices _todoService
+@inject NavigationManager navigationManager
+
+<h3>Todo List</h3>
+
+@if (todoList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="AddNewTodo">Dodaj novi task</button>
+    <button class="btn btn-info" @onclick="BackToList">Nazad</button>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Task </th>
+                <th>Završen</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in todoList)
+            {
+                @if (task.ItsDone == 0)
+                {
+                    <tr>
+                        <td>@task.Notes</td>
+                    <td>Ne</td>                 
+                    <td>
+                        <button class="btn btn-info" @onclick=@(() => UpdateTodo(task))>Edit</button>
+                        <button class="btn btn-danger" @onclick=@(() => DeleteTodo(task))>Delete</button>
+                    </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>@task.Notes</td>
+                        <td>Da</td>
+                        <td>
+                            <button class="btn btn-danger" @onclick=@(() => DeleteTodo(task))>Delete</button>
+                        </td>
+                    </tr>
+                }
+                }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Todo> todoList;
+    protected override async Task OnInitializedAsync() 
+    {
+        todoList = await _todoService.GetAllTodos();
+    }
+
+    public void AddNewTodo()
+    {
+        navigationManager.NavigateTo("addupdate");
+    }
+
+    public void UpdateTodo(Todo todo)
+    {
+        navigationManager.NavigateTo($"update/{todo.Id}");
+    }
+
+    public async void DeleteTodo(Todo todo)
+    {
+        await _todoService.DeleteTodo(todo.Id);
+        todoList = await _todoService.GetAllTodos();
+        this.StateHasChanged();
+    }
+
+    public void BackToList()
+    {
+        navigationManager.NavigateTo("/");
+    }
+}
+

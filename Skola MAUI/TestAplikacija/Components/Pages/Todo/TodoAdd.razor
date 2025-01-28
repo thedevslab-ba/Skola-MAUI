@@ -1,0 +1,87 @@
+﻿@page "/addupdate"
+@page "/update/{TodoId:int}"
+
+@using TestAplikacija.Services.TodoServices
+@using TestAplikacija.Models
+@inject ITodoServices _todoService
+@inject NavigationManager navigationManager
+
+<h3>Add Update</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="mb-3">
+            <label class="form-label">Todo Id:</label>
+            <input type="text" @bind="todoId" class="form-control" placeholder="Todo Id" readonly />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Task:</label>
+            <input type="text" @bind="Note" class="form-control" placeholder="Daily task" />
+        </div>
+        <div class="mb-3">
+            <div class="col-12 pb-3">
+                <input id="zavrsenoChk" type="checkbox" @bind="IsZavrseno" class="form-check-input" />
+                <label class="form-check-label" for="zavrsenoChk">
+                    Završeno
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-sm btn-success" @onclick="AddTodo">Save</button>
+        <button type="submit" class="btn btn-sm btn-info" @onclick="BackToList">Back</button>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int TodoId { get; set; }
+
+    private int todoId = 0;
+    private string Note = "";
+    private bool IsZavrseno;
+    
+    protected async override void OnInitialized()
+    {
+        base.OnInitialized();
+        todoId = TodoId;
+        if (todoId > 0)
+        {
+            var response = await _todoService.GetTodo(todoId);
+            Note = response.Notes;
+            IsZavrseno = Convert.ToBoolean(response.ItsDone);
+            this.StateHasChanged();
+        }
+    }
+
+    public async void AddTodo()
+    {
+        var task = new Todo();
+
+        task.Id = todoId;
+        task.Notes = Note;
+        task.ItsDone = Convert.ToSByte(IsZavrseno);
+
+        var respons = await _todoService.AddUpdateTodo(task);
+        if (respons)
+        {
+            if (todoId == 0)
+            {
+                await App.Current.MainPage.DisplayAlert("Saved", "Save Success", "Ok");
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Updated", "Update Success", "Ok");
+            }
+            navigationManager.NavigateTo("todolist");
+        }
+        else
+        {
+            await App.Current.MainPage.DisplayAlert("Updated", "Save Failed.", "Ok");
+        }
+    }
+
+    public void BackToList()
+    {
+        navigationManager.NavigateTo("todolist");
+    }
+}

@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|c:\\users\\iml5903\\desktop\\testaplikacija\\testaplikacija\\components\\pages\\todo\\todoadd.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|solutionrelative:testaplikacija\\components\\pages\\todo\\todoadd.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|c:\\users\\iml5903\\desktop\\testaplikacija\\testaplikacija\\components\\pages\\todo\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|solutionrelative:testaplikacija\\components\\pages\\todo\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|c:\\users\\iml5903\\desktop\\testaplikacija\\testaplikacija\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|solutionrelative:testaplikacija\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|c:\\users\\iml5903\\desktop\\testaplikacija\\testaplikacija\\services\\todoservices\\todoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|solutionrelative:testaplikacija\\services\\todoservices\\todoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|c:\\users\\iml5903\\desktop\\testaplikacija\\testaplikacija\\services\\todoservices\\itodoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572B0AF1-7DB3-4303-842D-87FAFF1A87FF}|TestAplikacija\\TestAplikacija.csproj|solutionrelative:testaplikacija\\services\\todoservices\\itodoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:607449253:0:{683b7fa4-6a84-40c1-a43b-1803dc159f14}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1532319096:0:{683b7fa4-6a84-40c1-a43b-1803dc159f14}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoList.razor",
+              "DocumentMoniker": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Components\\Pages\\Todo\\TodoList.razor",
+              "RelativeDocumentMoniker": "TestAplikacija\\Components\\Pages\\Todo\\TodoList.razor",
+              "ToolTip": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Components\\Pages\\Todo\\TodoList.razor",
+              "RelativeToolTip": "TestAplikacija\\Components\\Pages\\Todo\\TodoList.razor",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T07:59:36.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITodoServices.cs",
+              "DocumentMoniker": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Services\\TodoServices\\ITodoServices.cs",
+              "RelativeDocumentMoniker": "TestAplikacija\\Services\\TodoServices\\ITodoServices.cs",
+              "ToolTip": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Services\\TodoServices\\ITodoServices.cs",
+              "RelativeToolTip": "TestAplikacija\\Services\\TodoServices\\ITodoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T12:53:44.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoServices.cs",
+              "DocumentMoniker": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Services\\TodoServices\\TodoServices.cs",
+              "RelativeDocumentMoniker": "TestAplikacija\\Services\\TodoServices\\TodoServices.cs",
+              "ToolTip": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Services\\TodoServices\\TodoServices.cs",
+              "RelativeToolTip": "TestAplikacija\\Services\\TodoServices\\TodoServices.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwDoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T12:56:50.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "TestAplikacija\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\MauiProgram.cs",
+              "RelativeToolTip": "TestAplikacija\\MauiProgram.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBkAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T13:02:27.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoAdd.razor",
+              "DocumentMoniker": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Components\\Pages\\Todo\\TodoAdd.razor",
+              "RelativeDocumentMoniker": "TestAplikacija\\Components\\Pages\\Todo\\TodoAdd.razor",
+              "ToolTip": "C:\\Users\\iml5903\\Desktop\\TestAplikacija\\TestAplikacija\\Components\\Pages\\Todo\\TodoAdd.razor",
+              "RelativeToolTip": "TestAplikacija\\Components\\Pages\\Todo\\TodoAdd.razor",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAswFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T13:11:06.73Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
